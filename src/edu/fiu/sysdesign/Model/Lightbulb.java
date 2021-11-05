@@ -3,13 +3,13 @@ package edu.fiu.sysdesign.Model;
 
 public class Lightbulb {
 
-	private Boolean state;
+	private boolean state;
 	private String color;
 	
-	public Boolean getState() {
+	public boolean getState() {
 		return state;
 	}
-	public void setState(Boolean state) {
+	public void setState(boolean state) {
 		this.state = state;
 	}
 	public String getColor() {
@@ -18,7 +18,5 @@ public class Lightbulb {
 	public void setColor(String color) {
 		this.color = color;
 	}
-
-	
 
 }

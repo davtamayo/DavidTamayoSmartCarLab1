@@ -4,6 +4,8 @@ import edu.fiu.sysdesign.SelfCheckCapable;
 
 public class Receiver implements SelfCheckCapable{
 
+	//This is what will receive commands from the remote control (Transmitter).
+	//It will in turn push those commands onto the Control Board for execution.
 	private boolean status;
 	private int signalStrength;
 	private int transmitterRange;

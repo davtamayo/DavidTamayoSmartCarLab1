@@ -7,19 +7,19 @@ public class Transceiver extends Sensor implements SelfCheckCapable{
 	private float distance;
 
 
-	public void calculateDiscate() {
+	public void calculateDistance() {
 		// TODO - implement Transceiver.calculateDiscate
-		throw new UnsupportedOperationException();
+		//throw new UnsupportedOperationException();
 	}
 
 	public void sendEcho() {
 		// TODO - implement Transceiver.sendEcho
-		throw new UnsupportedOperationException();
+		//throw new UnsupportedOperationException();
 	}
 
 	public void receiveReply() {
 		// TODO - implement Transceiver.receiveReply
-		throw new UnsupportedOperationException();
+		//throw new UnsupportedOperationException();
 	}
 
 	public float getDistance() {

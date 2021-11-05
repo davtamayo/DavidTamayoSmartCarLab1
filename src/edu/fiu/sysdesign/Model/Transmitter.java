@@ -2,6 +2,8 @@ package edu.fiu.sysdesign.Model;
 
 public class Transmitter {
 
+	//This is the remote control. It will send commands to the Receiver.
+	//It will get detect signal strength and range from the receiver and send commands.
 	private boolean status;
 	private int signalStrength;
 	private int receiverRange;

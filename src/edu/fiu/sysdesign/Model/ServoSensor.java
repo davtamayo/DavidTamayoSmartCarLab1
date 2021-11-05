@@ -4,6 +4,8 @@ import edu.fiu.sysdesign.SelfCheckCapable;
 
 public class ServoSensor extends Sensor implements SelfCheckCapable{
 
+	private String sendMovement;
+	
 	@Override
 	public String getComponentName() {
 		return "ServoSensor";
@@ -24,6 +26,14 @@ public class ServoSensor extends Sensor implements SelfCheckCapable{
 		
 		System.out.println("Checking " + this.getComponentName() + "... " + resultDescription);
 		return result;
+	}
+
+	public String getSendMovement() {
+		return sendMovement;
+	}
+
+	public void setSendMovement(String sendMovement) {
+		this.sendMovement = sendMovement;
 	}
 
 
