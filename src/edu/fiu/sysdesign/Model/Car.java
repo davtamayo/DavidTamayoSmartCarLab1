@@ -13,12 +13,39 @@ public class Car implements SelfCheckCapable{
 	//All other objects are basically aggregates to this main board.
 	private String name;
 	private List<Object> componets;
+	private String driveMode;
 	
 	Car(String name, List<Object> components){
 		this.name = name;
 		this.componets = components;
 	}
 	
+	public String getDriveMode() {
+		return driveMode;
+	}
+
+	public void setDriveMode(String driveMode) {
+		this.driveMode = driveMode;
+	}
+	
+	
+	public void turnLeft() {
+		
+	}
+	
+	public void turnRight() {
+		
+	}
+	
+	public void moveForward() {
+		
+	}
+	
+	public void reverse() {
+		
+	}
+	
+
 	@Override
 	public boolean selfCheck() {
 		// TODO Auto-generated method stub
