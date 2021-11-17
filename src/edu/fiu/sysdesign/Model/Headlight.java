@@ -5,6 +5,13 @@ import edu.fiu.sysdesign.SelfCheckCapable;
 public class Headlight extends Lightbulb implements SelfCheckCapable {
 
 	private int intensity;
+	private String position;
+	
+	public Headlight(int intensity, boolean state, String color, String position) {
+		super(state, color);
+		this.intensity = intensity;
+		this.position = position;
+	}
 
 	public int getIntensity() {
 		return intensity;
@@ -16,7 +23,7 @@ public class Headlight extends Lightbulb implements SelfCheckCapable {
 
 	@Override
 	public String getComponentName() {
-		return "Headlight";
+		return position + " " + "Headlight";
 	}
 
 	@Override

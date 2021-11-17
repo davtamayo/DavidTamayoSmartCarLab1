@@ -6,6 +6,9 @@ public class Battery implements SelfCheckCapable{
 
 	private int batteryPercentage;
 	
+	public Battery(int batteryPercentage) {
+		this.batteryPercentage = batteryPercentage;
+	}
 
 	@Override
 	public String getComponentName() {

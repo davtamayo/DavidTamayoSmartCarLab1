@@ -12,6 +12,11 @@ public class Receiver implements SelfCheckCapable{
 	private String batteryStatus;
 	private String command;
 	
+	public Receiver(boolean status, String batteryStatus) {
+		this.status = status;
+		this.batteryStatus = batteryStatus;
+	}
+	
 	public boolean getStatus() {
 		return status;
 	}

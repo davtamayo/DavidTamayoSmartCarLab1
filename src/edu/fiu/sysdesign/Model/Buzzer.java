@@ -4,9 +4,11 @@ import edu.fiu.sysdesign.SelfCheckCapable;
 
 public class Buzzer implements SelfCheckCapable {
 
-	private boolean sound;
 	private int duration;
 
+	public Buzzer() {
+	}
+	
 	public void honk() {
 		System.out.println("Makes a sound");
 
@@ -45,14 +47,5 @@ public class Buzzer implements SelfCheckCapable {
 		this.duration = duration;
 	}
 
-
-	public boolean getSound() {
-		return sound;
-	}
-
-
-	public void setSound(boolean sound) {
-		this.sound = sound;
-	}
 
 }

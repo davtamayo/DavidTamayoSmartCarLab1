@@ -6,6 +6,11 @@ public class IRSensor extends Sensor implements SelfCheckCapable{
 
 	private float surfaceLightPercentage;
 
+	public IRSensor(float surfaceLightPercentage, boolean state, int sensitivity) {
+		super(state, sensitivity);
+		this.surfaceLightPercentage = surfaceLightPercentage;
+	}
+
 	public float getSurfaceLightPercentage() {
 		return surfaceLightPercentage;
 	}

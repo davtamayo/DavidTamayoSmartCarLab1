@@ -4,8 +4,13 @@ import edu.fiu.sysdesign.SelfCheckCapable;
 
 public class Transceiver extends Sensor implements SelfCheckCapable{
 
+	//This is the Ultrasonic Transceiver sensor
 	private float distance;
 
+
+	public Transceiver(boolean state, int sensitivity) {
+		super(state, sensitivity);
+	}
 
 	public void calculateDistance() {
 		// TODO - implement Transceiver.calculateDiscate

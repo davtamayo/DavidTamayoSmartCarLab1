@@ -5,18 +5,23 @@ import edu.fiu.sysdesign.SelfCheckCapable;
 public class ServoMotor implements SelfCheckCapable{
 
 	private String pan;
-	private String tilt;
+	private int tilt;
 	
+	
+	public ServoMotor(String pan, int tilt) {
+		this.pan = pan;
+		this.tilt = tilt;
+	}
 	public String getPan() {
 		return pan;
 	}
 	public void setPan(String pan) {
 		this.pan = pan;
 	}
-	public String getTilt() {
+	public int getTilt() {
 		return tilt;
 	}
-	public void setTilt(String tilt) {
+	public void setTilt(int tilt) {
 		this.tilt = tilt;
 	}
 	@Override

@@ -6,6 +6,11 @@ public class RobotArm implements SelfCheckCapable{
 
 	private String direction;
 
+	
+	public RobotArm(String direction) {
+		this.direction = direction;
+	}
+
 	public String getDirection() {
 		return direction;
 	}

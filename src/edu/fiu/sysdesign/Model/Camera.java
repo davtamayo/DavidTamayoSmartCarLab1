@@ -6,6 +6,12 @@ public class Camera implements SelfCheckCapable{
 
 	private boolean state;
 	private String mode;
+	private int distance;
+	
+	public Camera(boolean state, String mode) {
+		this.state = state;
+		this.mode = mode;
+	}
 	
 	@Override
 	public String getComponentName() {
@@ -45,4 +51,12 @@ public class Camera implements SelfCheckCapable{
 		this.mode = mode;
 	}
 
+	public int getDistance() {
+		return distance;
+	}
+
+	public int setDistance() {
+		return distance;
+	
+	}
 }

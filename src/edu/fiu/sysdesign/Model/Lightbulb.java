@@ -6,6 +6,11 @@ public class Lightbulb {
 	private boolean state;
 	private String color;
 	
+	public Lightbulb(boolean state, String color) {
+		this.state = state;
+		this.color = color;
+	}
+	
 	public boolean getState() {
 		return state;
 	}

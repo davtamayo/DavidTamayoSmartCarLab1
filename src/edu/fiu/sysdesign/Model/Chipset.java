@@ -8,6 +8,13 @@ public class Chipset implements SelfCheckCapable{
 	private String version;
 	private boolean state;
 	
+	
+	public Chipset(String firmware, String version, boolean state) {
+		this.firmware = firmware;
+		this.version = version;
+		this.state = state;
+	}
+	
 	public String getFirmware() {
 		return firmware;
 	}

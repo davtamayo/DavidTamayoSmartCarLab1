@@ -7,6 +7,13 @@ public class TailLight extends Lightbulb implements SelfCheckCapable{
 	private int timeDelay;
 	private String direction;
 	private String blinkPattern;
+	private String position;
+
+	public TailLight(boolean state, String color, String position) {
+		super(state, color);
+		this.position = position;
+		// TODO Auto-generated constructor stub
+	}
 	
 	public int getTimeDelay() {
 		return timeDelay;
@@ -26,9 +33,18 @@ public class TailLight extends Lightbulb implements SelfCheckCapable{
 	public void setBlinkPattern(String blinkPattern) {
 		this.blinkPattern = blinkPattern;
 	}
+	
+	public String getPosition () {
+		return position;
+	}
+	
+	public void setPosition(String position) {
+		this.position = position;
+	}
+	
 	@Override
 	public String getComponentName() {
-		return "TailLight";
+		return position + " " + "TailLight";
 	}
 	@Override
 	public boolean selfCheck() {

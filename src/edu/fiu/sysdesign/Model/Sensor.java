@@ -5,6 +5,12 @@ public class Sensor {
 	private boolean state;
 	private int sensitivity;
 	
+	
+	public Sensor(boolean state, int sensitivity) {
+		this.state = state;
+		this.sensitivity = sensitivity;
+	}
+	
 	public boolean getState() {
 		return state;
 	}

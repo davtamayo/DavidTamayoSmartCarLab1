@@ -8,6 +8,13 @@ public class WheelMotor implements SelfCheckCapable{
 	private String sidePlacement;
 	private String axlePlacement;
 	
+	
+	public WheelMotor(String direction, String sidePlacement, String axlePlacement) {
+		super();
+		this.direction = direction;
+		this.sidePlacement = sidePlacement;
+		this.axlePlacement = axlePlacement;
+	}
 	public String getDirection() {
 		return direction;
 	}
@@ -22,7 +29,7 @@ public class WheelMotor implements SelfCheckCapable{
 	}
 	@Override
 	public String getComponentName() {
-		return "WheelMotor";
+		return sidePlacement + " " + axlePlacement + " " + "WheelMotor";
 	}
 	@Override
 	public boolean selfCheck() {

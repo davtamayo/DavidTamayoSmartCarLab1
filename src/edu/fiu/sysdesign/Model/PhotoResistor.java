@@ -6,6 +6,10 @@ public class PhotoResistor extends Sensor implements SelfCheckCapable{
 
 	private int lightPercentage;
 
+	public PhotoResistor(boolean state, int sensitivity) {
+		super(state, sensitivity);
+	}
+	
 	public int getLightPercentage() {
 		return lightPercentage;
 	}

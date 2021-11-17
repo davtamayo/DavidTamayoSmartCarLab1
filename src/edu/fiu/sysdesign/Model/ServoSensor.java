@@ -4,7 +4,13 @@ import edu.fiu.sysdesign.SelfCheckCapable;
 
 public class ServoSensor extends Sensor implements SelfCheckCapable{
 
+	
 	private String sendMovement;
+	
+	public ServoSensor(boolean state, int sensitivity) {
+		super(state, sensitivity);
+	}
+
 	
 	@Override
 	public String getComponentName() {

@@ -10,6 +10,15 @@ public class Transmitter {
 	private String batteryStatus;
 	private String command;
 	
+	
+	public Transmitter(boolean status, int signalStrength, int receiverRange, String batteryStatus) {
+		super();
+		this.status = status;
+		this.signalStrength = signalStrength;
+		this.receiverRange = receiverRange;
+		this.batteryStatus = batteryStatus;
+	}
+	
 	public boolean getStatus() {
 		return status;
 	}
