@@ -12,12 +12,12 @@ public class Car implements SelfCheckCapable{
 	//This is the ControlBoard that also serves as a load bearing frame for all the other component objects.
 	//All other objects are basically aggregates to this main board.
 	private String name;
-	private List<Object> componets;
+	private List<Object> components;
 	private String driveMode;
 	
 	Car(String name, List<Object> components){
 		this.name = name;
-		this.componets = components;
+		this.components = components;
 	}
 	
 	public String getDriveMode() {
@@ -63,7 +63,7 @@ public class Car implements SelfCheckCapable{
 		boolean result = true;
 		int count = 0;
 
-		for(Object component : this.componets) {
+		for(Object component : this.components) {
 			if(component instanceof SelfCheckCapable) {
 				count++;
 				result &= SelfCheckUtils.basicSelfCheckRunner((SelfCheckCapable)component);
