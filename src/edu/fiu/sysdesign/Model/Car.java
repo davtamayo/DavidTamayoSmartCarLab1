@@ -147,6 +147,8 @@ public class Car implements SelfCheckCapable{
 		Car davidCar = new Car(carName, carComponents);
 		davidCar.runSelfCheck();
 		
+		//10% failure chance for each component. If no failures, the launch will be successful.
+		
 	}
 
 }
