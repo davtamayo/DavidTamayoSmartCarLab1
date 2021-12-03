@@ -1,6 +1,7 @@
 package edu.fiu.sysdesign.Model;
 
 import edu.fiu.sysdesign.SelfCheckCapable;
+import edu.fiu.sysdesign.SelfCheckUtils;
 
 public class WheelMotor implements SelfCheckCapable{
 
@@ -27,26 +28,22 @@ public class WheelMotor implements SelfCheckCapable{
 	public String getAxlePlacement() {
 		return axlePlacement;
 	}
+	
 	@Override
 	public String getComponentName() {
 		return sidePlacement + " " + axlePlacement + " " + "WheelMotor";
 	}
 	@Override
 	public boolean selfCheck() {
-		return true;
-	}
-	@Override
-	public boolean runSelfCheck() {
-		boolean result = this.selfCheck();
-		String resultDescription = "";
-		
-		if(result)
-			resultDescription = "Check OK";
-		
-		System.out.println("Checking " + this.getComponentName() + "... " + resultDescription);
-		return result;
+		// TODO Auto-generated method stub
+		return SelfCheckUtils.randomCheck(0.1);
 	}
 
+	@Override
+	public boolean runSelfCheck() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 	
 
 }

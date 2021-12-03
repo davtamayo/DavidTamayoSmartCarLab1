@@ -71,7 +71,7 @@ public class Car implements SelfCheckCapable{
 			
 		}
 		
-		System.out.println("Tested " + count + " components of " +  this.getComponentName() + "... " + ((count > 0 && result) ? "check ok" : "FAILED"));
+		System.out.println("\nTested " + count + " components of " +  this.getComponentName() + "... " + ((count > 0 && result) ? "check ok. All systems checked! \n\nReady for launch in\n3...\n2...\n1..." : "One or more components failed. \n\nDavid's Smart Car cannot launch. Abort Mission!"));
 		return (count > 0 && result);
 		
 	}
@@ -143,8 +143,7 @@ public class Car implements SelfCheckCapable{
 		
 		WheelMotor frontRightWheelMotor = new WheelMotor("None", "Right", "Front");
 		carComponents.add(frontRightWheelMotor);
-		
-		
+				
 		Car davidCar = new Car(carName, carComponents);
 		davidCar.runSelfCheck();
 		
