@@ -1,6 +1,7 @@
 package edu.fiu.sysdesign.Model;
 
 import edu.fiu.sysdesign.SelfCheckCapable;
+import edu.fiu.sysdesign.SelfCheckUtils;
 
 public class Camera implements SelfCheckCapable{
 
@@ -20,20 +21,16 @@ public class Camera implements SelfCheckCapable{
 
 	@Override
 	public boolean selfCheck() {
-		return true;
+		// TODO Auto-generated method stub
+		return SelfCheckUtils.randomCheck(0.1);
 	}
 
 	@Override
 	public boolean runSelfCheck() {
-		boolean result = this.selfCheck();
-		String resultDescription = "";
-		
-		if(result)
-			resultDescription = "Check OK";
-		
-		System.out.println("Checking " + this.getComponentName() + "... " + resultDescription);
-		return result;
+		// TODO Auto-generated method stub
+		return false;
 	}
+
 
 	public boolean getState() {
 		return state;
